@@ -5,7 +5,7 @@
 Walker walkers[] = new Walker[1000];
 
 void setup() {
-  size(1680, 1050, P3D);
+  fullScreen();
   
   for ( int i = 0; i < walkers.length; i++ ) {
     walkers[i] = new Walker();
@@ -46,7 +46,6 @@ class Walker {
   void update() {
     x = x + random(-1, 1);
     y = y + random(-1, 1);
-    h = (h + 1) % 360;
   }
   
   void display() {

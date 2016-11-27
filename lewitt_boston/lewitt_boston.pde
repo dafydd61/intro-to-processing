@@ -4,17 +4,14 @@ float[] x = new float[50];
 float[] y = new float[50];
 
 void setup() {
-  size(800, 450);
-  
+  fullScreen();
+}
+
+void draw() {
   for (int i = 0; i < 50; i++) {
     x[i] = random(width);
     y[i] = random(height);
   }
-  
-  noLoop();
-}
-
-void draw() {
   background(255);
   for (int i = 0; i < 50; i++) {
     noStroke();
@@ -25,4 +22,9 @@ void draw() {
       line(x[i], y[i], x[j], y[j]);
     }
   }
+  noLoop();
+}
+
+void mouseReleased() {
+  loop();
 }
