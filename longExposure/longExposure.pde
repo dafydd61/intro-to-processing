@@ -9,16 +9,17 @@ Eventually, it will overexpose. Like a real camera.
  
 import processing.video.*;
 
-int w = 640, h = 480;
 Capture cam;
 PImage tempImg;                // We'll display the picture using this variable
 float factor=.001;              // How fast does the camera expose?
-float[] r = new float[w*h];    // These 3 arrays contain each pixel of the picture we're building
-float[] g = new float[w*h];
-float[] b = new float[w*h];
+float[] r, g, b;
 
 void setup() {
-  size(w, h, P2D);
+  size(640, 480, P2D);
+
+  r = new float[width*height];    // These 3 arrays contain each pixel of the picture we're building
+  g = new float[width*height];
+  b = new float[width*height];
 
   cam = new Capture(this, 640, 480, 24);
   cam.start();
