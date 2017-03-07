@@ -1,7 +1,7 @@
 /**
- * Getting Started with Capture.
+ * Four
  * 
- * Reading and displaying an image from an attached Capture device. 
+ * 4-colour capture. Built on Getting Started with Capture. 
  */
 
 import processing.video.*;
@@ -40,11 +40,11 @@ void draw() {
   }
   tint(255);
   image(cam, 0, 0, 640, 360);
-  tint(255, 0, 0);
+  tint(255, 0, 255);
   image(cam, width/2, 0, 640, 360);
-  tint(255, 255, 0);
-  image(cam, 0, height/2, 640, 360);
   tint(0, 0, 255);
+  image(cam, 0, height/2, 640, 360);
+  tint(255, 255, 0);
   image(cam, width/2, height/2, 640, 360);
   // The following does the same as the above image() line, but 
   // is faster when just drawing the image without any additional 
