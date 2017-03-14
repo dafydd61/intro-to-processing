@@ -1,4 +1,4 @@
 Intro to Processing
 ===================
 
-Some starter skectches for Processing intro workshops.
+Some starter sketches for Processing intro workshops.
