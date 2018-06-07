@@ -46,8 +46,4 @@ void draw() {
   image(cam, 0, height/2, 640, 360);
   tint(255, 255, 0);
   image(cam, width/2, height/2, 640, 360);
-  // The following does the same as the above image() line, but 
-  // is faster when just drawing the image without any additional 
-  // resizing, transformations, or tint.
-  //set(0, 0, cam);
 }
